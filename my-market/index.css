@@ -1,0 +1,94 @@
+*{ /*body에는 default로 8px의 margin이 들어가 있다*/
+  margin: 0;
+  padding: 0;
+}
+
+#header{
+  /* width: 2000px; */
+  height:64px;
+  display: flex;
+  justify-content: center;
+  /* border-bottom: 1px solid gray; */
+}
+
+#body{
+  height: 100%;
+  width: 1024px;
+  margin: 0 auto; /*body를 중간에 위치시킴*/
+  padding-bottom: 24px;
+}
+#body h1{
+  margin-top: 13px;
+}
+
+#footer{
+  /* width: 1500px; */
+  height: 200px;
+  background-color: red;
+  margin: 0 auto;
+}
+
+#banner{
+  width:1024px;
+  height: 300px;
+}
+#banner > img{
+  width:100%;
+  height: 300px;
+}
+
+#header-area{
+  width: 1024px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  /* margin: 0 auto; */
+}
+#header-area-image{
+  width: 128.5;
+  height: 36.5;
+}
+
+#product-list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 12px;
+}
+.product-card{
+  width: 180px;
+  height: 300px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  border: 1.5px solid rgb(230,230,230);
+  border-radius: 20px; /*카드의 모서리를 둥글게*/
+  overflow: hidden; /*이미지가 border를 가리는 것을 방지*/
+}
+.product-img{
+  width: 100%;
+  height:210px;
+}
+.product-contents{
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+.product-name{
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+.product-price{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.product-seller{
+  display:flex;
+  align-items: center;
+  margin-top: 12px;
+}
+.product-avatar{
+  width: 24px;
+}
